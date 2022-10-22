@@ -1,0 +1,40 @@
+header {
+    width: 100vw;
+    height: 64px;
+    display: flex;
+    align-items: center;
+
+    .psStoreLogo {
+        width: 197px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    .headerLinks {
+        margin: auto;
+
+        a {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 20px;
+            font-family: $SSTBold;
+
+            &:hover {
+                background-color: $psgrey;
+            }
+        }
+
+        .active {
+            background-color: $psgrey;
+
+            &:hover {
+                background-color: $greyhover;
+            }
+        }
+    }
+}

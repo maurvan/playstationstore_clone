@@ -16,32 +16,52 @@ nav {
 
     .linksTopBar {
         height: 40px;
-        color: $navlinks;
         display: flex;
         justify-content: space-between;
 
         .leftTopBar {
             width: 520px;
-            font-size: 0.8125rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: -5px;
 
             .psLogo {
                 width: 34px;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-right: 15px;
             }
 
-            a {
-                text-decoration: none;
+            button {
+                border: none;
+                background-color: white;
+                color: $navlinks;
+                font-size: 0.8125rem;
+                font-family: $SSTBold;
+                margin-right: 13px;
+                cursor: pointer;
 
                 &:after {
-                    content: '\e932';
+                    font-family: "Font Awesome 5 Free";
+                    content: '\f078';
+                    font-weight: 900;
+                    margin-left: 5px;
                 }
 
                 &:visited {
                     color: $navlinks;
                 }
+
+                &:hover {
+                    color: $psblue;
+                }
             }
         }
         
         .rightTopBar {
+            display: flex;
+            align-items: center;
 
             .btnConnect {
                 background-color: $psblue;
@@ -51,10 +71,17 @@ nav {
                 padding-left: 8px;
                 padding-right: 8px;
                 border-radius: 20px;
+                padding-bottom: 4px;
+                margin-right: 40px;
+                cursor: pointer;
 
                 &:hover {
                     background-color: $bluehover;
                 }
+            }
+
+            .fa-magnifying-glass {
+                margin-right: 20px;
             }
         }
     }

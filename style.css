@@ -41,25 +41,46 @@ nav .sonyTopBar .sonyLogo {
 }
 nav .linksTopBar {
   height: 40px;
-  color: #999;
   display: flex;
   justify-content: space-between;
 }
 nav .linksTopBar .leftTopBar {
   width: 520px;
-  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -5px;
 }
 nav .linksTopBar .leftTopBar .psLogo {
   width: 34px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
 }
-nav .linksTopBar .leftTopBar a {
-  text-decoration: none;
-}
-nav .linksTopBar .leftTopBar a:after {
-  content: "\e932";
-}
-nav .linksTopBar .leftTopBar a:visited {
+nav .linksTopBar .leftTopBar button {
+  border: none;
+  background-color: white;
   color: #999;
+  font-size: 0.8125rem;
+  font-family: "SSTBold";
+  margin-right: 13px;
+  cursor: pointer;
+}
+nav .linksTopBar .leftTopBar button:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: 900;
+  margin-left: 5px;
+}
+nav .linksTopBar .leftTopBar button:visited {
+  color: #999;
+}
+nav .linksTopBar .leftTopBar button:hover {
+  color: #0070cc;
+}
+nav .linksTopBar .rightTopBar {
+  display: flex;
+  align-items: center;
 }
 nav .linksTopBar .rightTopBar .btnConnect {
   background-color: #0070cc;
@@ -69,9 +90,50 @@ nav .linksTopBar .rightTopBar .btnConnect {
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 20px;
+  padding-bottom: 4px;
+  margin-right: 40px;
+  cursor: pointer;
 }
 nav .linksTopBar .rightTopBar .btnConnect:hover {
   background-color: #005499;
+}
+nav .linksTopBar .rightTopBar .fa-magnifying-glass {
+  margin-right: 20px;
+}
+
+header {
+  width: 100vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+header .psStoreLogo {
+  width: 197px;
+  margin-left: 20px;
+  position: absolute;
+}
+header .headerLinks {
+  margin: auto;
+}
+header .headerLinks a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 20px;
+  font-family: "SSTBold";
+}
+header .headerLinks a:hover {
+  background-color: #ebeef0;
+}
+header .headerLinks .active {
+  background-color: #ebeef0;
+}
+header .headerLinks .active:hover {
+  background-color: #CED5DA;
 }
 
 /*# sourceMappingURL=style.css.map */
