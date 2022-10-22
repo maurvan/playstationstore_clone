@@ -1,0 +1,61 @@
+nav {
+    width: 100%;
+
+    .sonyTopBar {
+        background-color: black;
+        width: 100vw;
+        height: 36px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .sonyLogo {
+            width: 80px;
+        }
+    }
+
+    .linksTopBar {
+        height: 40px;
+        color: $navlinks;
+        display: flex;
+        justify-content: space-between;
+
+        .leftTopBar {
+            width: 520px;
+            font-size: 0.8125rem;
+
+            .psLogo {
+                width: 34px;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:after {
+                    content: '\e932';
+                }
+
+                &:visited {
+                    color: $navlinks;
+                }
+            }
+        }
+        
+        .rightTopBar {
+
+            .btnConnect {
+                background-color: $psblue;
+                color: white;
+                font-family: $SSTBold;
+                font-size: 1rem;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: $bluehover;
+                }
+            }
+        }
+    }
+}

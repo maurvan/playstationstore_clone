@@ -1,0 +1,77 @@
+/* colors */
+@font-face {
+  font-family: "SSTMedium";
+  src: url("assets/SSTMedium.ttf");
+}
+@font-face {
+  font-family: "SSTBold";
+  src: url("assets/SSTBold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SSTLight";
+  src: url("assets/SSTLight.ttf");
+  font-weight: lighter;
+}
+body {
+  background-color: white;
+  font-family: "SSTMedium";
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+}
+nav .sonyTopBar {
+  background-color: black;
+  width: 100vw;
+  height: 36px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .sonyTopBar .sonyLogo {
+  width: 80px;
+}
+nav .linksTopBar {
+  height: 40px;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+}
+nav .linksTopBar .leftTopBar {
+  width: 520px;
+  font-size: 0.8125rem;
+}
+nav .linksTopBar .leftTopBar .psLogo {
+  width: 34px;
+}
+nav .linksTopBar .leftTopBar a {
+  text-decoration: none;
+}
+nav .linksTopBar .leftTopBar a:after {
+  content: "\e932";
+}
+nav .linksTopBar .leftTopBar a:visited {
+  color: #999;
+}
+nav .linksTopBar .rightTopBar .btnConnect {
+  background-color: #0070cc;
+  color: white;
+  font-family: "SSTBold";
+  font-size: 1rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 20px;
+}
+nav .linksTopBar .rightTopBar .btnConnect:hover {
+  background-color: #005499;
+}
+
+/*# sourceMappingURL=style.css.map */

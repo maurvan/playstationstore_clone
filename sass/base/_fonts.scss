@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "SSTMedium";
+    src: url("assets/SSTMedium.ttf");
+}
+$SSTReg: "SSTMedium";
+
+@font-face {
+    font-family: "SSTBold";
+    src: url("assets/SSTBold.ttf");
+    font-weight: bold;
+}
+$SSTBold: "SSTBold";
+
+@font-face {
+    font-family: "SSTLight";
+    src: url("assets/SSTLight.ttf");
+    font-weight: lighter;
+}
+$SSTLight: "SSTLight";
