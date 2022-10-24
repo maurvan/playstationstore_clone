@@ -9,3 +9,21 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.btnBlue {
+    background-color: $psblue;
+    color: white;
+    font-family: $SSTBold;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+
+    &:hover {
+        background-color: $bluehover;
+    }
+
+    &:active, &:focus {
+        box-shadow: 0 0 0 2px $bluehover;
+    }
+}

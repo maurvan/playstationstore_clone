@@ -1,9 +1,12 @@
 nav {
     width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 5;
 
     .sonyTopBar {
         background-color: black;
-        width: 100vw;
+        width: 100%;
         height: 36px;
         display: flex;
         justify-content: flex-end;
@@ -64,20 +67,10 @@ nav {
             align-items: center;
 
             .btnConnect {
-                background-color: $psblue;
-                color: white;
-                font-family: $SSTBold;
-                font-size: 1rem;
                 padding-left: 8px;
                 padding-right: 8px;
-                border-radius: 20px;
                 padding-bottom: 4px;
                 margin-right: 40px;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $bluehover;
-                }
             }
 
             .fa-magnifying-glass {
