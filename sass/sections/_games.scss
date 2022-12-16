@@ -1,0 +1,54 @@
+.games {
+    width: 100%;
+    position: relative;
+    top: 4rem;
+
+    .gamesTop {
+        display: flex;
+        justify-content: center;
+
+        div {
+            padding-right: 1rem;
+
+            img {
+                width: 20.75rem;
+                border-radius: 8px;
+
+                &:hover {
+                    filter: brightness(90%);
+                }
+            }
+        }
+    }
+
+    .gamesNew {
+        margin-top: 4rem;
+
+        .gamesNewTitle {
+            font-size: 1.625rem;
+            font-family: $SSTLight;
+            line-height: 1.25;
+            letter-spacing: 0.1px;
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+
+        a {
+            text-decoration: none;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                margin-left: 80px;
+
+                img {
+                    width: 13.5rem;
+                    border-radius: 8px;
+                }
+            }
+        }        
+    }
+}

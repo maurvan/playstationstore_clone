@@ -1,2 +1,2 @@
 # psstore_clone
-A clone of the PlayStation Store page (October 2022)
+A clone of the PlayStation Store page (December 2022)
