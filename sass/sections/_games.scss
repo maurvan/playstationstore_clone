@@ -21,34 +21,85 @@
         }
     }
 
-    .gamesNew {
+    .gamesCollections {
         margin-top: 4rem;
+        margin-left: 80px;
 
         .gamesNewTitle {
             font-size: 1.625rem;
             font-family: $SSTLight;
             line-height: 1.25;
             letter-spacing: 0.1px;
-            margin-left: 80px;
             margin-top: 30px;
         }
 
-        a {
+        .gamesAll a {
+            color: $psblue;
             text-decoration: none;
+            right: 80px;
+            padding-right: 5px;
+            padding-top: 7px;
+            position: absolute;
+            font-family: $SSTBold;
 
-            div {
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                word-wrap: break-word;
-                margin-left: 80px;
+            &:hover {
+                background-color: $psgrey;
+                padding: 7px 15px 7px 15px;
+                margin-right: -10px;
+                border-radius: 20px;
+                color: $bluehover;
+            }
+        }
 
-                img {
+        .gamesList {
+            display: flex;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    filter: brightness(90%);
+                    // TODO add border on hover
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 1.5rem;
                     width: 13.5rem;
-                    border-radius: 8px;
+                    margin-right: 1rem;
+
+                    .gamesNewSub {
+                        line-height: 1.5;
+                        color: black;
+                        font-size: 1rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        white-space: normal;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
+                    }
                 }
             }
-        }        
+        }         
+    }
+
+    .gamesUpcoming {
+        margin-left: 80px;
+        margin-top: 5rem;
+
+        .gamesUpcomingTitle {
+            font-size: 1.625rem;
+            font-family: $SSTLight;
+            line-height: 1.25;
+            letter-spacing: 0.1px;
+        }
     }
 }

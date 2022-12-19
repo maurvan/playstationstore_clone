@@ -221,31 +221,74 @@ header .headerLinks .active:hover {
 .games .gamesTop div img:hover {
   filter: brightness(90%);
 }
-.games .gamesNew {
+.games .gamesCollections {
   margin-top: 4rem;
+  margin-left: 80px;
 }
-.games .gamesNew .gamesNewTitle {
+.games .gamesCollections .gamesNewTitle {
   font-size: 1.625rem;
   font-family: "SSTLight";
   line-height: 1.25;
   letter-spacing: 0.1px;
-  margin-left: 80px;
   margin-top: 30px;
 }
-.games .gamesNew a {
+.games .gamesCollections .gamesAll a {
+  color: #0070cc;
+  text-decoration: none;
+  right: 80px;
+  padding-right: 5px;
+  padding-top: 7px;
+  position: absolute;
+  font-family: "SSTBold";
+}
+.games .gamesCollections .gamesAll a:hover {
+  background-color: #ebeef0;
+  padding: 7px 15px 7px 15px;
+  margin-right: -10px;
+  border-radius: 20px;
+  color: #005499;
+}
+.games .gamesCollections .gamesList {
+  display: flex;
+}
+.games .gamesCollections .gamesList a {
   text-decoration: none;
 }
-.games .gamesNew a div {
+.games .gamesCollections .gamesList a:hover {
+  filter: brightness(90%);
+}
+.games .gamesCollections .gamesList a div {
   display: flex;
   flex-direction: column;
+  margin-top: 1.5rem;
+  width: 13.5rem;
+  margin-right: 1rem;
+}
+.games .gamesCollections .gamesList a div .gamesNewSub {
+  line-height: 1.5;
+  color: black;
+  font-size: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  margin-left: 80px;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
-.games .gamesNew a div img {
-  width: 13.5rem;
+.games .gamesCollections .gamesList a div img {
+  width: 100%;
   border-radius: 8px;
+}
+.games .gamesUpcoming {
+  margin-left: 80px;
+  margin-top: 5rem;
+}
+.games .gamesUpcoming .gamesUpcomingTitle {
+  font-size: 1.625rem;
+  font-family: "SSTLight";
+  line-height: 1.25;
+  letter-spacing: 0.1px;
 }
 
 /*# sourceMappingURL=style.css.map */
