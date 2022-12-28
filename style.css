@@ -171,6 +171,13 @@ header .headerLinks .active:hover {
   object-fit: cover;
   z-index: 4;
 }
+.banner .promoImage .promoGame {
+  position: absolute;
+  height: 111%;
+  right: 24%;
+  bottom: 0;
+  z-index: 9;
+}
 .banner .promoImage .promoText {
   height: 80%;
   position: absolute;
@@ -202,10 +209,16 @@ header .headerLinks .active:hover {
   margin-top: 40px;
 }
 
+.bannerPlus, .bannerStars {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 100px;
+}
+
 .games {
   width: 100%;
   position: relative;
   top: 4rem;
+  margin-bottom: 220px;
 }
 .games .gamesTop {
   display: flex;
@@ -289,6 +302,62 @@ header .headerLinks .active:hover {
   font-family: "SSTLight";
   line-height: 1.25;
   letter-spacing: 0.1px;
+}
+.games .gamesDemo {
+  margin-left: 80px;
+  margin-top: 5rem;
+}
+.games .gamesDemo .gamesDemoTitle {
+  font-size: 1.625rem;
+  font-family: "SSTLight";
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+}
+.games .gamesDemo .gamesList .gamesConsole {
+  color: white;
+  font-family: "SSTBold";
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  border: 1px solid white;
+  width: 23px;
+  background-color: rgba(18, 19, 20, 0.6);
+  position: absolute;
+  bottom: 82px;
+  font-size: 10px;
+  margin-left: 7px;
+  text-align: center;
+}
+.games .gamesDemo .gamesList .gamesFree {
+  font-family: "SSTLight";
+  color: #363636;
+  margin-top: 5px;
+}
+
+.plus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plus .plusTitle {
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  font-size: 1.625rem;
+  margin-bottom: 50px;
+}
+.plus .plusRows {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 92%;
+}
+.plus .plusRows img {
+  width: 332px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.plus .plusRows img:hover {
+  filter: brightness(90%);
 }
 
 /*# sourceMappingURL=style.css.map */

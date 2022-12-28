@@ -2,6 +2,7 @@
     width: 100%;
     position: relative;
     top: 4rem;
+    margin-bottom: 220px;
 
     .gamesTop {
         display: flex;
@@ -100,6 +101,41 @@
             font-family: $SSTLight;
             line-height: 1.25;
             letter-spacing: 0.1px;
+        }
+    }
+
+    .gamesDemo {
+        margin-left: 80px;
+        margin-top: 5rem;
+
+        .gamesDemoTitle {
+            font-size: 1.625rem;
+            font-family: $SSTLight;
+            line-height: 1.25;
+            letter-spacing: 0.1px;
+        }
+
+        .gamesList {
+            .gamesConsole {
+                color: white;
+                font-family: $SSTBold;
+                letter-spacing: 0.5px;
+                line-height: 1.25;
+                border: 1px solid white;
+                width: 23px;
+                background-color: rgba(18,19,20,.6);
+                position: absolute;
+                bottom: 82px;
+                font-size: 10px;
+                margin-left: 7px;
+                text-align: center;
+            }
+
+            .gamesFree {
+                font-family: $SSTLight;
+                color: $bodytext;
+                margin-top: 5px;
+            }
         }
     }
 }

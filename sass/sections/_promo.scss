@@ -19,6 +19,14 @@
             z-index: 4;
         }
 
+        .promoGame {
+            position: absolute;
+            height: 111%;
+            right: 24%;
+            bottom: 0;
+            z-index: 9;
+        }
+
         .promoText {
             height: 80%;
             position: absolute;
@@ -53,4 +61,9 @@
         margin-left: 80px;
         margin-top: 40px;
     }
+}
+
+.bannerPlus, .bannerStars {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,.12);
+    margin-bottom: 100px;
 }
