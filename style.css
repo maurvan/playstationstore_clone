@@ -360,4 +360,66 @@ header .headerLinks .active:hover {
   filter: brightness(90%);
 }
 
+footer {
+  background-color: #003697;
+  width: 100%;
+  font-family: "SSTLight";
+  color: white;
+  margin-top: 50px;
+  letter-spacing: 0.4px;
+}
+footer .footerTop {
+  margin-left: 80px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+footer .footerTop .footerGlobe {
+  width: 45px;
+  margin-left: 20px;
+}
+footer .footerTop .footerLogo {
+  width: 75px;
+}
+footer .footerTop a {
+  color: white;
+  text-decoration: none;
+}
+footer .footerTop a .fa-2xs {
+  vertical-align: 0.1em !important;
+}
+footer .footerTop a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footerLinks {
+  margin-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 23rem;
+  margin-top: 20px;
+}
+footer .footerLinks div {
+  display: flex;
+  flex-direction: column;
+}
+footer .footerLinks a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
+footer .footerLinks a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footerCopyright {
+  text-align: center;
+  padding: 30px 0;
+}
+footer .footerCopyright a {
+  color: white;
+  text-decoration: none;
+}
+footer .footerCopyright a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /*# sourceMappingURL=style.css.map */
